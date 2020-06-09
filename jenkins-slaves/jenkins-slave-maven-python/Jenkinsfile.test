@@ -1,0 +1,17 @@
+pipeline {
+    agent {
+      label 'jenkins-slave-maven-python'
+    }
+
+    stages {
+        stage ('Run Test') {
+            steps {
+              sh """
+                  python -V
+              """
+            }
+        }
+
+    }
+
+}
