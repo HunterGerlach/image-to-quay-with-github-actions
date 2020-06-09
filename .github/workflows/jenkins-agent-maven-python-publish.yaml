@@ -6,11 +6,11 @@ on:
     tags:
       - '*'
     paths:
-      - jenkins-slaves/jenkins-slave-maven-python/version.json
+      - jenkins-agents/jenkins-agent-maven-python/version.json
 jobs:
   build:
     env:
-      context: jenkins-slaves/jenkins-slave-maven-python
+      context: jenkins-agents/jenkins-agent-maven-python
       image_name: jenkins-agent-maven-python
     runs-on: ubuntu-latest
     steps:

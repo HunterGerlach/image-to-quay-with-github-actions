@@ -2,11 +2,11 @@ name: jenkins-agent-maven-python-pr
 on:
   pull_request:
     paths:
-      - jenkins-slaves/jenkins-slave-maven-python/**
+      - jenkins-agents/jenkins-agent-maven-python/**
 jobs:
   build:
     env:
-      context: jenkins-slaves/jenkins-slave-maven-python
+      context: jenkins-agents/jenkins-agent-maven-python
       image_name: jenkins-agent-maven-python
     runs-on: ubuntu-latest
     steps:
