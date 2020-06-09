@@ -2,7 +2,7 @@
 
 This is an example repository to show/describe how to build a container image and push to [Quay.io][1] using GitHub Actions.
 
-<a name="code-repository">## Code Repository</a>
+## Code Repository
 
 ### Container Definition
 This repository is setup to build an image (`jenkins-agent-maven-python`) when a PR is made to any contents in the relevant image path (as defined in the GitHub Actions workflow file). 
@@ -19,7 +19,7 @@ The `.github/workflows` directory contains the GitHub actions yaml definition fi
 - `username`: For use in accessing the remote registry. See [GitHub Secrets](#github-secrets)
 - `password`: For use in accessing the remote registry. See [GitHub Secrets](#github-secrets)
 
-<a name="github-secrets">## GitHub Secrets</a>
+## GitHub Secrets
 
 In the repository settings, add the following secrets:
 
@@ -28,13 +28,13 @@ In the repository settings, add the following secrets:
  -`REGISTRY_USERNAME`:  _Your [quay.io][1] username or organization name (this is likely the same as the repository name)_
  -`REGISTRY_PASSWORD`:  _Your [quay.io][1] password_
 
-<a name="image-repository-settings">## Image Repository Settings on Quay.io</a>
+## Image Repository Settings on Quay.io
 
 In [Quay.io][1], create a new repository that has the same value as the `env -> image_name` listed in your GitHub Action yaml file. 
 
 **Note:** Keep in mind that this value will likely be different for actions that create different container images, but will likely be the same for actions which are performing different steps on the same container (e.g. PR vs Publish).
 
-<a name="github-actions">## GitHub Actions</a>
+## GitHub Actions
 
 Assuming that everything is configured correctly, you should now be able to see GitHub Actions in action for this repository.
 
