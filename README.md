@@ -1,3 +1,5 @@
+[![License](https://img.shields.io/github/license/HunterGerlach/image-to-quay-with-github-actions?color=informational)](LICENSE)
+
 # image-to-quay-with-github-actions
 
 This is an example repository to show/describe how to build a container image and push to [Quay.io][1] using GitHub Actions.
