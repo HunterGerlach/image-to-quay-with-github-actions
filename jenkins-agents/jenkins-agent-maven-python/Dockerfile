@@ -1,3 +1,4 @@
+# Use OpenShift jenkins-agent base image from quay
 FROM quay.io/openshift/origin-jenkins-agent-base:4.4
 
 EXPOSE 8080
